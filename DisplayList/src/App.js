@@ -1,13 +1,13 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
+import Employees from './Employee';
 
 
 function App() {
   return (
     <div className="App">
-      Hello World
       
+      <Employees></Employees>
     </div>
   );
 }
