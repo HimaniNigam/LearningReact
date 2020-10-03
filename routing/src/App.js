@@ -11,8 +11,10 @@ function App() {
     margin: "0",
     padding: "0",
     overflow: "hidden",
-    backgroundColor: "#0099cc",
-    listStyleType:"none"
+    backgroundColor: "#5597b4",
+    listStyleType:"none",
+    width:'100%'
+    
   }
   const navlinkstyle ={
     display: "block",
@@ -31,19 +33,19 @@ function App() {
     <ul className="" style={ulstyle}>
     <li style={{float:"left"}} className="active">
          <NavLink to = '/' exact activeStyle={
-           {color:'yellow'}} style={navlinkstyle}>HOME</NavLink>
+           {backgroundColor:'#e35885'}} style={navlinkstyle}>HOME</NavLink>
          </li>
          <li  style={{float:"left"}}>
          <NavLink to = '/projects' exact activeStyle={
-           {color:'yellow'}} style={navlinkstyle}>PROJECTS</NavLink> 
+           {backgroundColor:'#e35885'}} style={navlinkstyle}>PROJECTS</NavLink> 
          </li>
          <li  style={{float:"left"}}>
          <NavLink to = '/services' exact activeStyle={
-           {color:'yellow'}} style={navlinkstyle}>SERVICES</NavLink>
+           {backgroundColor:'#e35885'}} style={navlinkstyle}>SERVICES</NavLink>
          </li>
          <li  style={{float:"left"}}>
          <NavLink to = '/contact' exact activeStyle={
-           {color:'yellow'}} style={navlinkstyle}>CONTACT</NavLink>
+           {backgroundColor:'#e35885'}} style={navlinkstyle}>CONTACT</NavLink>
          </li>
     </ul>
   </div>
@@ -69,11 +71,7 @@ function App() {
             return (<h1>You chose CONTACT</h1>)
           }
         }/>
-        {/* <Route path='/user/:username' exact strict component={User}/>
-         */}
-         {/* <Route path='/user/:username' exact strict render={({match})=>(
-          state.loggedIn ? (<User username={match.params.username}/>) : (<Redirect to="/"/>)
-        )}/> */}
+       
       </div>
       
     </Router>     
