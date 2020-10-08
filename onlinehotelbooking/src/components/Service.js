@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import Title from './Title'
-import {FaCocktail , FaShuttleVan,FaBeer, FaBiking} from 'react-icons/fa'
+import {FaCocktail ,FaWifi, FaShuttleVan,FaBeer, FaBiking} from 'react-icons/fa'
 
 export default class Services extends Component {
     state={
         services:[
             {
-                icon:<FaCocktail/>,
-                title: "Free MockTail",
-                info: "Enjoy free mocktails*"
+                icon:<FaWifi/>,
+                title: "Free Internet Access",
+                info: "Free Internet Access in resort"
             },
             {
                 icon:<FaBiking/>,
