@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../components/Hero';
+import DefaultHeader from '../components/DefaultHeader';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import Services from '../components/Service';
@@ -11,9 +11,9 @@ export default function Home() {
         
                            
         <Link to="/staffsignin" className="btn btn-outline-primary">Staff Sign In</Link>          
-        <Hero hero="defaultHero">
+        <DefaultHeader defaultheader="defaultheader">
             
-        </Hero>
+        </DefaultHeader>
         <Banner title="Luxurious Rooms" subtitle="deluxe rooms starting at 3 lakh">
                 <Link to="/rooms" className="btn btn-primary">
                       Our Rooms

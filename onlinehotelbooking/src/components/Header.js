@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import defaultBcg from '../images/room-3.jpeg';
 
-const StyledHero = styled.header`
+const Header = styled.header`
  min-height: 100vh;
  background: url(${props => props.img ? props.img : defaultBcg}) center/cover no-repeat;
  display: flex;
@@ -9,4 +9,4 @@ const StyledHero = styled.header`
  justify-content: center;
 `;
 
-export default StyledHero;
+export default Header;

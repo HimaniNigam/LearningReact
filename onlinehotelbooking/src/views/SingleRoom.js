@@ -3,7 +3,7 @@ import defaultBcg from '../images/room-3.jpeg';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import { RoomContext } from '../context';
-import StyledHero from '../components/StyledHero';
+import Header from '../components/Header';
 
 export default class SingleRoom extends Component {
     constructor (props){
@@ -34,12 +34,12 @@ export default class SingleRoom extends Component {
         const [mainImg, ...defaultBcg] = images;
         return (
             <>
-            <StyledHero img={mainImg || this.state.defaultBcg }>
+            <Header img={mainImg || this.state.defaultBcg }>
            
             <Banner title={`${name} room`}>
                     <Link to="/rooms" className="btn btn-primary">Back To Rooms</Link>
             </Banner>
-            </StyledHero>
+            </Header>
             <section className="single-room container">
                <div className="row">
                     {defaultBcg.map((item,index) => {
