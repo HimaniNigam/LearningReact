@@ -8,13 +8,19 @@ import FeaturedRooms from '../components/FeaturedRooms';
 export default function Home() {
     return (
         <>
+        
+                           
+        <Link to="/staffsignin" className="btn btn-outline-primary">Staff Sign In</Link>          
         <Hero hero="defaultHero">
+            
         </Hero>
         <Banner title="Luxurious Rooms" subtitle="deluxe rooms starting at 3 lakh">
                 <Link to="/rooms" className="btn btn-primary">
                       Our Rooms
                 </Link>
+                
         </Banner>
+        
         <Services/> 
         <FeaturedRooms/>
         </>

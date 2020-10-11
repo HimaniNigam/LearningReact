@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Title from './Title'
-import {FaCocktail ,FaWifi, FaShuttleVan,FaBeer, FaBiking} from 'react-icons/fa'
+import {FaWifi, FaShuttleVan,FaBeer, FaBiking} from 'react-icons/fa'
 
 export default class Services extends Component {
     state={
