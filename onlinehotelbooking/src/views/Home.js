@@ -15,9 +15,9 @@ export default function Home() {
             
         </DefaultHeader>
         <Banner title="Luxurious Rooms" subtitle="deluxe rooms starting at 3 lakh">
-                <Link to="/rooms" className="btn btn-primary">
+                {/*<Link to="/rooms" className="btn btn-primary">
                       Our Rooms
-                </Link>
+                </Link>*/}
                 
         </Banner>
         

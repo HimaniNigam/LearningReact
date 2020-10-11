@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import defaultBcg from '../images/room-3.jpeg';
-import Banner from '../components/Banner';
+//import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import { RoomContext } from '../context';
 import Header from '../components/Header';
@@ -24,7 +24,7 @@ export default class SingleRoom extends Component {
                             <div className="card shadow-lg border-0 p-4 error">
                                 <h1 className="text-center display-4">SORRY</h1>
                                 <h3>No such room could be found...</h3>
-                                <Link to="/rooms" className="btn btn-warning mt-4 ">Back to Rooms</Link>
+                              {/*  <Link to="/rooms" className="btn btn-warning mt-4 ">Back to Rooms</Link> */}
                             </div> 
                         </div>
                     </div>
@@ -36,9 +36,9 @@ export default class SingleRoom extends Component {
             <>
             <Header img={mainImg || this.state.defaultBcg }>
            
-            <Banner title={`${name} room`}>
-                    <Link to="/rooms" className="btn btn-primary">Back To Rooms</Link>
-            </Banner>
+           {/*  <Banner title={`${name} room`}>
+                   <Link to="/rooms" className="btn btn-primary">Back To Rooms</Link>
+            </Banner> */}
             </Header>
             <section className="single-room container">
                <div className="row">
